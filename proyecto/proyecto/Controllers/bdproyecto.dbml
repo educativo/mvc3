@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PROYECTO" Class="bdproyectoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=FAMILIAR-1C76CF\JHAIR;Initial Catalog=PROYECTO;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PROYECTOConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cliente" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="CodCli" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Empleado" Member="Empleados">
+    <Type Name="Empleado">
+      <Column Name="CodEmp" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Cargo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Turno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Entidad" Member="Entidads">
+    <Type Name="Entidad">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodPais" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ciudad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tipo_de_pago" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Habitacion" Member="Habitacions">
+    <Type Name="Habitacion">
+      <Column Name="CodTip" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodHab" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pais" Member="Pais">
+    <Type Name="Pai">
+      <Column Name="CodPais" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SisMone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Moneda" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoCambio" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Persona" Member="Personas">
+    <Type Name="Persona">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApPat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApMat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DocId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoDoc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodPais" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ciudad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="FechNac" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo" Member="Tipos">
+    <Type Name="Tipo">
+      <Column Name="CodTip" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="CodUs" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.InPersona" Method="InPersona">
+    <Parameter Name="DocId" Parameter="docId" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ApPat" Parameter="apPat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ApMat" Parameter="apMat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TipoDoc" Parameter="tipoDoc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodPais" Parameter="codPais" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Ciudad" Parameter="ciudad" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(60)" />
+    <Parameter Name="FechNac" Parameter="fechNac" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Ins_cli_p" Method="Ins_cli_p">
+    <Parameter Name="nom" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ap" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="am" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="di" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tp" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ciu" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tel" Type="System.Int32" DbType="Int" />
+    <Parameter Name="e" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dir" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="fn" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Ins_emp_p" Method="Ins_emp_p">
+    <Parameter Name="nom" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ap" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="am" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="di" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tp" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ciu" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tel" Type="System.Int32" DbType="Int" />
+    <Parameter Name="e" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dir" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="fn" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="ca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tu" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

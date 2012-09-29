@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="bdproyecto">
+  <DataContextMoniker Name="/bdproyectoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f4e0ac12-aa94-4f2a-8cf0-4021aba5e199" absoluteBounds="3.875, 1, 2, 0.93180582682291679">
+      <DataClassMoniker Name="/bdproyectoDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbe2641d-e93c-4487-96ba-f2029b557089" absoluteBounds="3.89, 1.46, 1.9700000000000002, 0.37180582682291669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a56036d-c7e0-48c1-9f99-fdf2f7e83d1c" absoluteBounds="0.5, 1.25, 2, 1.26050048828125">
+      <DataClassMoniker Name="/bdproyectoDataContext/Empleado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca04a7e7-dfa0-4e33-8e5d-160dfd621b93" absoluteBounds="0.515, 1.71, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d879b1d-c0e8-4140-90b6-f993d15d6b8c" absoluteBounds="1.125, 3.125, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/bdproyectoDataContext/Entidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c499253-f470-43e1-b109-6fef83f629fa" absoluteBounds="1.1400000000000001, 3.585, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d4f25c4-a02e-4bd6-82a7-5d97f07e7e17" absoluteBounds="1.875, 0.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/bdproyectoDataContext/Habitacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e32fd1ea-7a93-48af-9c94-e4a847f10b6d" absoluteBounds="1.8900000000000001, 1.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="231e5ea9-f417-46f6-98f8-28eb5ffb52ed" absoluteBounds="4.75, 3.5, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/bdproyectoDataContext/Pai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8194955b-a8fa-4dc3-b08b-d54c94308c48" absoluteBounds="4.765, 3.96, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f6db45b-dbda-48a6-a637-a0f684dc1c16" absoluteBounds="5.125, 2.625, 2, 2.5752791341145831">
+      <DataClassMoniker Name="/bdproyectoDataContext/Persona" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17231fcd-3d1b-4f8a-9608-5ff3ac32e9d5" absoluteBounds="5.14, 3.085, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a425c79f-40b0-4fcf-84e8-a4ec8824587f" absoluteBounds="4.5, 3.25, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/bdproyectoDataContext/Tipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4fc9ffb-7c85-4d86-9459-4752b31bc6f5" absoluteBounds="4.515, 3.71, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8547b45-bf76-4ffb-a449-5511c4b695cc" absoluteBounds="3.875, 4.125, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/bdproyectoDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8111825-1c56-4dc9-8950-80170e6f7368" absoluteBounds="3.89, 4.585, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

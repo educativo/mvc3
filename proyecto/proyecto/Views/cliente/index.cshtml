@@ -1,0 +1,84 @@
+﻿@model proyecto.Models.cliente
+@{
+    ViewBag.Title = "inicio";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="@Url.Content("../../Content/cli.css")" rel="stylesheet" type="text/css" />
+        <title>Inicio</title>  
+        <p id="hotel">
+        
+        </p>  
+    </head>
+    <body >
+        <div id="costado">
+            
+        </div>
+        <div id="imagenes">
+                <img class="bottom" src="../../Content/themes/base/images/colo7.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo2.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo9.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo4.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo7.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo2.jpg" alt=""/>
+                <img class="bottom" src="../../Content/themes/base/images/colo9.jpg" alt=""/>
+        <!--        <img class="bottom" src="../../Content/themes/base/images/colo4.jpg" alt=""/>-->
+                
+         </div>
+        <h2>Cliente</h2> 
+        @using (Html.BeginForm())
+        {
+            
+            <div>
+                <fieldset>
+                    <legend>Registrar cliente</legend>
+                    <div>
+                        @Html.LabelFor(m=>m.Nombre )
+                        @Html.TextBoxFor(m=>m.Nombre)
+                        @Html.LabelFor(m=>m.Ap)
+                        @Html.TextBoxFor(m=>m.Ap)
+                        @Html.LabelFor(m=>m.Am)
+                        @Html.TextBoxFor(m => m.Am)
+                    </div>
+                    
+                    <div>
+                        @Html.LabelFor(m=>m.Di)
+                        @Html.TextBoxFor(m=>m.Di)
+                        @Html.LabelFor(m=>m.Td)
+                        <td>
+                            <SELECT name="ocupación">
+		                        <OPTION VALUE="1">Carnet de Identidad</OPTION>
+		                        <OPTION VALUE="2">Pasaporte</OPTION>
+		                        <OPTION VALUE="3">Carnet Diplomaiico</OPTION>
+		                        <OPTION VALUE="4">Run</OPTION>
+		                        <OPTION VALUE="5">Otro</OPTION>
+	                        </SELECT>
+                        </td>
+                    </div> 
+                    <div>
+                        @Html.LabelFor(m=>m.pa)
+                        @Html.TextBoxFor(m=>m.pa)
+                        @Html.LabelFor(m=>m.ciu)
+                        @Html.TextBoxFor(m=>m.ciu)
+                        @Html.LabelFor(m=>m.dir)
+                        @Html.TextBoxFor(m=>m.dir)
+                    </div>
+                    <div>
+                        @Html.LabelFor(m=>m.e)
+                        @Html.TextBoxFor(m=>m.e)
+                        @Html.LabelFor(m=>m.t)
+                        @Html.TextBoxFor(m=>m.t)
+                        @Html.LabelFor(m=>m.fn)
+                        <INPUT type="text" name="apellido">
+                    </div>
+                    <p>
+                        <input   type="submit" center="true" value="Aceptar" />
+                    </p>
+                </fieldset>
+            </div>
+        }
+           
+    </body>
+</html>
